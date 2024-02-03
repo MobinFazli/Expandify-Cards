@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background-image: linear-gradient(to right top, #0b0a0b, #0b0a0c, #0a0a0c, #090b0d, #080b0d, #041018, #021321, #00162b, #001941, #001a56, #001669, #250376);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+  
+.my-container {
+    display: flex;
+    width: 90vw;
+}
+  
+.expandableCards {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+  
+.expandableCards h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+  
+.expandableCards.active {
+    flex: 5;
+}
+  
+.expandableCards.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+ 
+@media (max-width: 480px) {
+    .my-container {
+      width: 100vw;
+    }
+  
+    .expandableCards:nth-of-type(4),
+    .expandableCards:nth-of-type(5) {
+      display: none;
+    }
+}
+
+#card1 {
+    background-image: url(https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2022/11/Hubble-Pillars-of-Creation.jpg?resize=1500%2C1565&ssl=1);
+}
+  
+  #card2 {
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/pillars-of-creation-visible-and-midi-1666987280.png?crop=0.917xw:1.00xh;0.0433xw,0&resize=640:*);
+}
+  
+  #card3 {
+    background-image: url(https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2Fnature.2015.17345/MediaObjects/41586_2015_Article_BFnature201517345_Figa_HTML.jpg);
+}
+  
+  #card4 {
+    background-image: url(https://i.redd.it/0v61eirejka91.jpg);
+}
+  
+  #card5 {
+    background-image: url(https://www.syfy.com/sites/syfy/files/styles/scale_600/public/schmidt_mysticmountain.jpg);
+}

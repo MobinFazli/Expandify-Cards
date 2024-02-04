@@ -1,82 +1,90 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
   
 body {
-    background-image: linear-gradient(to right top, #0b0a0b, #0b0a0c, #0a0a0c, #090b0d, #080b0d, #041018, #021321, #00162b, #001941, #001a56, #001669, #250376);
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+  background-image: linear-gradient(to right top, #0b0a0b, #0b0a0c, #0a0a0c, #090b0d, #080b0d, #041018, #021321, #00162b, #001941, #001a56, #001669, #250376);
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
   
 .my-container {
-    display: flex;
-    width: 90vw;
+  display: flex;
+  width: 90vw;
 }
   
 .expandableCards {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: all 700ms ease-in;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in;
 }
   
 .expandableCards h3 {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
 }
   
 .expandableCards.active {
-    flex: 5;
+  flex: 5;
 }
   
 .expandableCards.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
  
 @media (max-width: 480px) {
-    .my-container {
-      width: 100vw;
-    }
+  .my-container {
+    width: 100vw;
+  }
   
-    .expandableCards:nth-of-type(4),
-    .expandableCards:nth-of-type(5) {
-      display: none;
-    }
+  .expandableCards:nth-of-type(4),
+  .expandableCards:nth-of-type(5) {
+    display: none;
+  }
 }
 
 #card1 {
-    background-image: url(https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2022/11/Hubble-Pillars-of-Creation.jpg?resize=1500%2C1565&ssl=1);
+  background-image: linear-gradient(to top, #f5f8f7, #c1c5c5, #909595, #626768, #383c3e, #23333e, #0f293f, #001e3e, #002b66, #003790, #0040b9, #3645e0);
 }
   
-  #card2 {
-    background-image: url(https://hips.hearstapps.com/hmg-prod/images/pillars-of-creation-visible-and-midi-1666987280.png?crop=0.917xw:1.00xh;0.0433xw,0&resize=640:*);
+#card2 {
+  background-image: linear-gradient(to top, #1010cf, #0035cd, #004ac7, #075abc, #3867ae, #3d69ae, #426caf, #476eaf, #3567be, #275ecc, #2753d7, #3645e0);
 }
   
-  #card3 {
-    background-image: url(https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2Fnature.2015.17345/MediaObjects/41586_2015_Article_BFnature201517345_Figa_HTML.jpg);
+#card3 {
+  background-image: linear-gradient(to top, #cf1063, #b52779, #953887, #71438b, #4f4886, #435890, #3c6694, #3f7396, #5894ad, #79b5c3, #9fd7d9, #caf8f0);
 }
   
-  #card4 {
-    background-image: url(https://i.redd.it/0v61eirejka91.jpg);
+#card4 {
+  background-image: linear-gradient(to top, #e9ff00, #ffb322, #ed744f, #ae4d61, #613853, #56314e, #4b2a4a, #402345, #731e58, #ac0056, #dd003f, #ff0505);
 }
   
-  #card5 {
-    background-image: url(https://www.syfy.com/sites/syfy/files/styles/scale_600/public/schmidt_mysticmountain.jpg);
+#card5 {
+  background-image: linear-gradient(to top, #b96416, #be8339, #c4a05e, #ccba87, #d8d3b2, #c9cbb2, #bdc3b2, #b4bab1, #879288, #5b6c63, #314842, #062725);
+}
+
+#card6 {
+  background-image: linear-gradient(to top, #5e2947, #442d4e, #2b2f49, #1b2d3d, #19282e, #202e32, #283536, #313b3b, #3f5252, #4e6a69, #5d8381, #6d9d9a);
+}
+  
+#card7 {
+  background-image: linear-gradient(to top, #05254e, #002746, #00273b, #042530, #122327, #11292a, #132f2b, #19342a, #264324, #434e15, #6b5504, #9b5310);background-image: linear-gradient(to top, #05254e, #002746, #00273b, #042530, #122327, #11292a, #132f2b, #19342a, #264324, #434e15, #6b5504, #9b5310);
 }

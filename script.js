@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll('.expandableCards')
 
 cards.forEach(card => {
-    card.addEventListener('click', () => {
+    card.addEventListener('mouseover', () => {
         removeActiveClasses()
         card.classList.add('active')
     })
